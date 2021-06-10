@@ -28,7 +28,7 @@
             </li>
         </ul>
         <span class="navbar-text mr-2">
-            User: {{(currentUser$ | async).username}}
+            User: {{(currentUser$ | async)?.username}}
           </span>
         <button class="btn btn-outline-warning my-2 my-sm-0" type="button" (click)="onLogout()" *ngIf="currentUser$ | async">Logout</button>
     </div>

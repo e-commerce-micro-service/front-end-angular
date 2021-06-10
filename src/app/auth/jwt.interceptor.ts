@@ -7,6 +7,7 @@ import {
 } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { AuthService } from './auth.service';
+import {AutomobileService} from "../automobile/automobile.service";
 // import { AutomobileService } from '../automobile/automobile.service';
 
 @Injectable()
