@@ -18,6 +18,7 @@ import {AutomobileCreateComponent} from "./automobile/automobile-create/automobi
 import {AutomobileSearchResultsComponent} from "./automobile/automobile-search-results/automobile-search-results.component";
 import {AutomobileEditComponent} from "./automobile/automobile-edit/automobile-edit.component";
 import {AutomobileDeleteComponent} from "./automobile/automobile-delete/automobile-delete.component";
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import {AutomobileDeleteComponent} from "./automobile/automobile-delete/automobi
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    NgxPaginationModule
    ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
