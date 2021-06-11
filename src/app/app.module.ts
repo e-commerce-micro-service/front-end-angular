@@ -19,6 +19,7 @@ import {AutomobileSearchResultsComponent} from "./automobile/automobile-search-r
 import {AutomobileEditComponent} from "./automobile/automobile-edit/automobile-edit.component";
 import {AutomobileDeleteComponent} from "./automobile/automobile-delete/automobile-delete.component";
 import { NgxPaginationModule } from 'ngx-pagination';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +33,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
     AutomobileCreateComponent,
     AutomobileDetailComponent,
     AutomobileEditComponent,
-    AutomobileDeleteComponent
-  ],
+    AutomobileDeleteComponent,
+    RegistrationComponent
+   ],
   imports: [
     BrowserModule,
     FormsModule,

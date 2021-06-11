@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
   { path: 'welcome', component: WelcomeComponent, canActivate: [AuthGuard] },
   { path: 'log-in', component: LoginComponent },
+  { path: 'registration', component: RegistrationComponent },
   { path: 'automobile/search', component: AutomobileSearchComponent, canActivate: [AuthGuard] },
   { path: 'automobile/create', component: AutomobileCreateComponent, canActivate: [AuthGuard], data: { roles: [Role.ROLE_ADMIN] } },
   { path: 'automobile/:id', component: AutomobileDetailComponent, canActivate: [AuthGuard] },
