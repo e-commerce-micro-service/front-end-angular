@@ -12,8 +12,8 @@
         <h3 class="h3 mb-3 font-weight-normal text-center">Please sign in</h3>
         <div class="form-group">
             <label>Username</label>
-            <input type="text"  [(ngModel)]="user.username" #usernameVar="ngModel" name="username" id="username"  class="form-control"  
-            placeholder="Enter email" [ngClass]="{'is-invalid': (usernameVar.touched || usernameVar.dirty) && !usernameVar.valid }" 
+            <input type="text"  [(ngModel)]="user.username" #usernameVar="ngModel" name="username" id="username"  class="form-control"
+            placeholder="Enter email" [ngClass]="{'is-invalid': (usernameVar.touched || usernameVar.dirty) && !usernameVar.valid }"
             required>
             <span class="invalid-feedback">
                 <span *ngIf="usernameVar.errors?.required">
@@ -23,23 +23,26 @@
         </div>
         <div class="form-group">
             <label>Password</label>
-            <input type="password" [(ngModel)]="user.password" #passwordVar="ngModel" name="password" id="password"  class="form-control"  
-            placeholder="Password" [ngClass]="{'is-invalid': (passwordVar.touched || passwordVar.dirty) && !passwordVar.valid }" 
+            <input type="password" [(ngModel)]="user.password" #passwordVar="ngModel" name="password" id="password"  class="form-control"
+            placeholder="Password" [ngClass]="{'is-invalid': (passwordVar.touched || passwordVar.dirty) && !passwordVar.valid }"
             required>
             <span class="invalid-feedback">
                 <span *ngIf="passwordVar.errors?.required">
                     Prego inserire un valore
                 </span>
             </span>
+
         </div>
         <button type="submit" [disabled]="!loginForm.valid" class="btn btn-block btn-primary">Sign in</button>
+        <br>
+        No sei registrato?<a href="#" class="stretched-link">Iscriviti</a>
     </form>
-</div> 
+</div>
 <ng-template #elseBlock>
     <div class="container">
         <div class='card'>
             <div class='card-body mt-5'>
-    
+
             <div class="alert alert-warning mt-3" role="alert">
                 L'accesso risulta effettuato. Si prega di effettuare il 'Logout' prima di effettuare
                 nuovamente l'accesso.
